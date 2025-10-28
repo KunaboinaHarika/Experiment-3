@@ -28,5 +28,21 @@ steps{
 bat'mvn package'
 }
 }
+stage('deployment(optimal)'){
+steps{
+echo"deployement stage"
+}
+}
+}
+post{
+success{
+echo"pipeline completed successfully!"
+}
+}
+failure{
+echo"build or test failure check logs above'
+}
+}
+}
 
 
